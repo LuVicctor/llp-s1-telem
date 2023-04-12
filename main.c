@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+  int matrix1[3][3] = {{1,3,5}, {2,4,6}, {7,9,11}};
+  int matrix2[3][3] = {{2,4,6}, {3,5,7}, {1,8,10}};
+  int Soma[3][3];
+  int i, j;
+  for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){ 
+      printf("Martix1 = %d ", matrix1[i][j]);
+    }
+    printf("\n");
+  }
+  for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){ 
+      if (i==j)
+      printf("\nDiagonal matrix1 = %d ", matrix1[i][j]);
+    }
+  }
+  printf("\n\n");
+  for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){ 
+      printf("Martix2 = %d ", matrix2[i][j]);
+    }
+    printf("\n");
+  }
+  printf("\nA soma das marizes é: \n");
+  for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+      Soma[i][j] = matrix1[i][j] + matrix2[i][j];
+      printf("Soma = %d ", Soma[i][j]);
+    }
+    printf("\n");
+  }
+  return 0;
+}
