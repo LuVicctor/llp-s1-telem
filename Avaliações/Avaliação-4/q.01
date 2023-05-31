@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+  int numero;
+
+  printf("Entre com um numero: ");
+  scanf("%d", &numero);
+  if (numero < 0){
+    printf("Numero invalido!");
+  }  
+  else {
+    double logaritmo = log10(numero);
+    printf("O logaritmo desse numero é: %.2f\n", logaritmo);
+  }
+return 0;
+}  
